@@ -1,8 +1,8 @@
 node_modules
-package-lock.json
 
+.vscode
 # 源文件目录
-src
+dist/src
 
 # 测试文件目录
 test
@@ -13,9 +13,13 @@ test
 
 # babel配置文件
 .babelrc.json
+package-lock.json
+tsconfig.json
 
 # eslint配置文件
 .eslintrc.js
+.eslintignore
+.prettierrc
 
 # webpack配置文件
 webpack.config.js

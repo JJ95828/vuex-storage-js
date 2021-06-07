@@ -6,8 +6,8 @@ export default class utils implements utilsClass {
     this.storage = storage
   }
   has(key: string) {
-    console.log(this.storage.get(key))
-    return !!this.storage.get(key)
+    console.log(this.get(key))
+    return !!this.get(key)
   }
   get(key: string) {
     return JSON.parse(this.storage.getItem(key))
@@ -15,11 +15,11 @@ export default class utils implements utilsClass {
   set(key: string, value: any) {
     this.storage.setItem(key, JSON.stringify(value))
   }
-  
+
   del(key: string) {
     this.storage.removeItem(key)
   }
-}  
+}
 
 export const localStorage = new utils(window.localStorage)
 export const sessionStorage = new utils(window.sessionStorage)

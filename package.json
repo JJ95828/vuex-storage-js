@@ -1,6 +1,6 @@
 {
   "name": "vuex-storage-js",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "vue, vuex plugin. vuex-storage-js localStorage SessionStorage.  ",
   "main": "src/index.ts",
   "types": "types/index.d.ts",

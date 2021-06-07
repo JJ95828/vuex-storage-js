@@ -14,3 +14,5 @@ export interface Options {
   stateKey?: string[]
   mutationsKey?: string[]
 }
+
+declare module 'vuex-storage-js'

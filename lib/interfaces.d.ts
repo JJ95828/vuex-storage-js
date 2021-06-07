@@ -7,8 +7,8 @@ export interface utilsClass {
     del: (key: string) => void;
 }
 export interface Options {
-    keys: string | string[];
-    mode: string;
+    keys?: string | string[];
+    mode?: string;
     stateKey?: string[];
     mutationsKey?: string[];
 }

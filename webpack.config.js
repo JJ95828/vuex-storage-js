@@ -8,7 +8,7 @@ const config = {
   mode: isMin ? 'production' : 'development',
   entry: './src/index.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'lib'),
     filename: `index.${type}${isMin ? '.min' : ''}.js`,
     library: 'createStorage',
     libraryTarget
@@ -44,7 +44,7 @@ const config = {
       }
     ]
   },
-  plugins: [new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['./dist/*'] })],
+  plugins: [new CleanWebpackPlugin()],
   resolve: {
     extensions: ['.ts', '.js', './test/*']
   }

@@ -1,5 +1,5 @@
 {
-  "name": "vuex-storage",
+  "name": "vuex-storage-js",
   "version": "1.0.0",
   "description": "vue, vuex plugin. vuex-storage-js localStorage SessionStorage.  ",
   "main": "src/index.ts",
@@ -45,8 +45,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "git+https://github.com/JJ95828/vuex-storage-js"
   },
-  "bugs": {},
-  "homepage": ""
+  "bugs": {
+    "url": "https://github.com/JJ95828/vuex-storage-js/issues"
+  },
+  "homepage": "https://github.com/JJ95828/vuex-storage-js"
 }

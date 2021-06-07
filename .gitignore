@@ -1,0 +1,9 @@
+package-lock.json
+
+/dist/test
+#umi
+# /dist
+
+#mjs
+# /src
+node_modules

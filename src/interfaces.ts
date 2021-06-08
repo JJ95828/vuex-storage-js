@@ -8,8 +8,14 @@ export interface utilsClass {
 }
 
 export interface Options {
-  keys?: string | string[]
-  mode?: string
-  stateKey?: string[]
-  mutationsKey?: string[]
+  keys: string
+  mode: string
 }
+
+export interface OptionsGroup {
+  mode: string
+  stateKey: string
+  mutationsKey: string
+}
+
+export type Config = Options & OptionsGroup[]

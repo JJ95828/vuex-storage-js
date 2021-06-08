@@ -1,4 +1,3 @@
-export { Vue, VueConstructor } from 'vue/types/vue'
 export { Plugin as VuexPlugin, Store } from 'vuex/types/index'
 
 export interface utilsClass {

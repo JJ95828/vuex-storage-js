@@ -1,6 +1,6 @@
 import { Options, Store, VuexPlugin, utilsClass } from './interfaces'
-import { localStorage, sessionStorage } from './utils'
-export default function createLocaStoragePlugin(options: Options): VuexPlugin<object> {
+import { localStorage, sessionStorage } from './tool'
+export default function vuexStorageJs(options: Options): VuexPlugin<object> {
   const { keys = '__storage_js__', mode = 'localStorage', stateKey = [], mutationsKey = [] } = options
   let _mode: utilsClass
   if (mode === 'localStorage') {

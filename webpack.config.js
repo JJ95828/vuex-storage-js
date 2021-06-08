@@ -8,7 +8,7 @@ const config = {
   mode: isMin ? 'production' : 'development',
   entry: './src/index.ts',
   output: {
-    path: _resolve(__dirname, 'lib'),
+    path: _resolve(__dirname, 'dist'),
     filename: `index.${type}${isMin ? '.min' : ''}.js`,
     library: 'createStorage',
     libraryTarget: 'umd'

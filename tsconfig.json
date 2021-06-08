@@ -1,11 +1,22 @@
 {
+  "compileOnSave": false,
 	"compilerOptions": {
 		"sourceMap": true,
-		"module": "commonjs",
+		"module": "UMD",
     "declaration": true,
-    "outDir": "./dist",
+    "baseUrl": "./",
+    "outDir": "lib",
+    "declarationDir": "lib/types/",
 		"target": "es5",
+    "moduleResolution":"Node",
 		"lib": ["ES2015", "DOM"],
-    "strict": false
-	}
+    "strict": false,
+	},
+  "include": [
+    "src/"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts"
+  ]
 }
